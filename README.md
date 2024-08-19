@@ -34,7 +34,7 @@ cd linktree-personalizado
 
 ## 🔧 Estrutura do Projeto
 
-'''
+```
 linktree-personalizado/
 │
 ├── index.html          # Estrutura HTML do Linktree
@@ -42,8 +42,7 @@ linktree-personalizado/
 ├── scripts.js          # JavaScript para alternância de temas
 └── assets/
     ├── sun.svg         # Ícone de sol
-    └── moon.svg        # Ícone de lua
-'''
+```
 
 ## 📜 Licença
 
