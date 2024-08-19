@@ -1,0 +1,165 @@
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #f4f4f4;
+   color: #333;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   transition: background-color 0.3s, color 0.3s;
+   position: relative;
+}
+
+.container {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   width: 100%;
+   max-width: 300px;
+   transition: background-color 0.3s;
+}
+
+.profile-pic {
+   width: 100px; 
+   height: 100px; 
+   border-radius: 50%; /* Faz a imagem ficar circular */
+   object-fit: cover; /* Ajusta a imagem para preencher o círculo */
+   margin-bottom: 0px; 
+}
+
+h1 {
+   margin-bottom: -7px; 
+}
+
+.description {
+   margin-bottom: 30px; 
+   color: #666;
+}
+
+.links a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #0073b1;
+   color: #fff;
+   text-decoration: none;
+   padding: 12px 0;
+   margin: 10px 0;
+   border-radius: 7px;
+   transition: background-color 0.3s;
+}
+
+.links a i {
+   margin-right: 8px;
+}
+
+.links a:hover {
+   background-color: #005582;
+}
+
+/* Tema Dark */
+body.dark-theme {
+   background-color: #121212;
+   color: #e0e0e0;
+}
+
+.container.dark-theme {
+   background-color: #1e1e1e;
+}
+
+.links a.dark-theme {
+   background-color: #333;
+}
+
+.links a.dark-theme:hover {
+   background-color: #444;
+}
+
+/* Estilos do botão themas */
+.theme-toggle {
+   position: fixed; 
+   top: 20px;
+   right:40px;
+   z-index: 1000; 
+}
+
+#toggleTheme {
+   display: none;
+}
+
+.toggle-label {
+   width: 60px;
+   height: 30px;
+   background-color: #007bff;
+   border-radius: 30px;
+   position: relative;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-label .icon {
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   top: 5px;
+   transition: opacity 0.10s;
+}
+
+.sun-icon {
+   left: 10px;
+}
+
+.moon-icon {
+   right: 10px;
+   opacity: 0;
+}
+
+#toggleTheme:checked + .toggle-label {
+   background-color: #0056b3;
+}
+
+#toggleTheme:checked + .toggle-label .sun-icon {
+   opacity: 0;
+}
+
+#toggleTheme:checked + .toggle-label .moon-icon {
+   opacity: 1;
+}
+
+
+
+@media (max-width: 600px) {
+   .container {
+       padding: 15px;
+       width: 90%;
+       max-width: none;
+   }
+
+   .toggle-label {
+       width: 50px;
+       height: 25px;
+   }
+
+   .toggle-label .icon {
+       width: 18px;
+       height: 18px;
+       top: 4px;
+   }
+}
+
+@media (max-width: 400px) {
+   .toggle-label {
+       width: 45px;
+       height: 22px;
+   }
+
+   .toggle-label .icon {
+       width: 16px;
+       height: 16px;
+       top: 3px;
+   }
+}
