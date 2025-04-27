@@ -44,6 +44,9 @@ linktree-personalizado/
     ├── sun.svg         # Ícone de sol
 ```
 
+## Acesse
+https://gaarciia.github.io/Linktree/
+
 ## 📜 Licença
 
-Este projeto é licenciado sob a MIT License.
+**Link:** Este projeto é licenciado sob a MIT License.
